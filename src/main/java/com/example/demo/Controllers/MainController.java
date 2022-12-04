@@ -7,7 +7,7 @@ import com.example.demo.Parsers.PDLReader;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path="/result", method= RequestMethod.GET)
+@RequestMapping(path="/result", method= RequestMethod.POST)
 public class MainController {
     @GetMapping
     public static String getPayments(@RequestParam("domain") String url) {
